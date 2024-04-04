@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotDetect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='Images/Logo.png') }}" alt="Logo" class="logo">
+    <h1 class="check-title">Check Your Network Now!!</h1>
+    <div class="rectangle-box">
+        <h1 class="title-form">Upload your PCAP file here</h1>
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="custom-file-input">
+                <label for="pcap_file" class="custom-button">Choose File</label>
+                <input type="file" id="pcap_file" name="pcap_file" class="input-file-box" accept=".pcap">
+            </div>
+            <span id="selectedFileText" class="selectedFileText"></span>
+            <button type="submit" id="uploadButton" class="upload-button">Upload</button>
+        </form>
+    </div>
+    {% if csv_file %}
+    <h2 class="download-title">Download Your Results!</h2>
+    <form action="/download/{{ csv_file }}" method="get">
+        <button type="submit" class="download-button">Download CSV File</button>
+    </form>
+    <h3 class="re-upload">Want to check for another file?<a href="#" id="reload-link"> Click Here</a></h3>
+{% endif %}
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
