@@ -51,4 +51,4 @@ All the code and resources in this repository are licensed under the GNU GENERAL
 [**LINKEDIN - Jayashre** ](https://www.linkedin.com/in/jayashrek/) \
 [**LINKEDIN - Nidhi Gummaraju** ](https://in.linkedin.com/in/nidhigummaraju) \
 [**LINKEDIN - Saadhvi Sree H** ](https://in.linkedin.com/in/saadhvisree) \
-[**LINKEDIN - Mridulla K Madhu** ](https://www.linkedin.com/in/mridulla-k-madhu-2b1618258/) \
+[**LINKEDIN - Mridulla K Madhu** ](https://www.linkedin.com/in/mridulla-k-madhu-2b1618258/)
